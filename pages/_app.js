@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { ChakraProvider, CSSReset } from "@chakra-ui/core";
 
 import theme from "../chakra";
