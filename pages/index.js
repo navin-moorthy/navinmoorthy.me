@@ -1,8 +1,10 @@
 import Head from "next/head";
 
+import { Box, Center } from "@chakra-ui/core";
+
 export default function Home() {
   return (
-    <div className='container'>
+    <Center flexDir='column' minH='100vh' py={2}>
       <Head>
         <title>Next JS & Chakra UI Starter Template</title>
         <meta name='title' content='Next JS & Chakra UI Starter Template' />
@@ -30,10 +32,9 @@ export default function Home() {
         />
       </Head>
 
-      <main>
-        <h1 className='title'>
-          Welcome to <a href='https://nextjs.org'>Next.js & Chakra UI!</a>
-        </h1>
+      <Center as='main' flexDir='column' flex='1' paddingX='5rem'>
+        <h1 className='title'>Next.js & Chakra UI</h1>
+        <h2 className='title h2'>Starter Template</h2>
 
         <p className='description'>
           Get started by editing <code>pages/index.js</code>
@@ -63,61 +64,9 @@ export default function Home() {
             <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
           </a>
         </div>
-      </main>
-
-      <footer>
-        <a
-          href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Powered by <img src='/vercel.svg' alt='Vercel Logo' className='logo' />
-        </a>
-      </footer>
+      </Center>
 
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
         .title a {
           color: #0070f3;
           text-decoration: none;
@@ -133,6 +82,11 @@ export default function Home() {
           margin: 0;
           line-height: 1.15;
           font-size: 4rem;
+          margin-bottom: 16px;
+        }
+
+        .title.h2 {
+          font-size: 2.5rem;
         }
 
         .title,
@@ -205,20 +159,6 @@ export default function Home() {
           }
         }
       `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
-            Droid Sans, Helvetica Neue, sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+    </Center>
   );
 }
