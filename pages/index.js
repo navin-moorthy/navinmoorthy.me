@@ -1,10 +1,36 @@
 import Head from "next/head";
 
-import { Box, Center } from "@chakra-ui/core";
+import { Center, Heading, Text, Code, Link } from "@chakra-ui/core";
+
+const Card = ({ title, link, children, ...props }) => {
+  return (
+    <Link
+      href={link}
+      flex='1 1 45%'
+      m={4}
+      p='1.5rem'
+      textDecoration='none'
+      borderWidth='1px'
+      borderRadius='10px'
+      transition='color 0.15s ease, border-color 0.15s ease'
+      _hover={{
+        textDecor: "none",
+        color: "teal.500",
+        borderColor: "teal.500",
+      }}
+      {...props}
+    >
+      <Heading as='h3' size='lg' fontWeight='normal' m=' 0 0 1rem 0'>
+        {`${title}`}
+      </Heading>
+      <Text fontSize='xl'>{children}</Text>
+    </Link>
+  );
+};
 
 export default function Home() {
   return (
-    <Center flexDir='column' minH='100vh' py={2}>
+    <Center flexDir='column' minH='100vh' py={8}>
       <Head>
         <title>Next JS & Chakra UI Starter Template</title>
         <meta name='title' content='Next JS & Chakra UI Starter Template' />
@@ -32,133 +58,39 @@ export default function Home() {
         />
       </Head>
 
-      <Center as='main' flexDir='column' flex='1' paddingX='5rem'>
-        <h1 className='title'>Next.js & Chakra UI</h1>
-        <h2 className='title h2'>Starter Template</h2>
+      <Center as='main' flexDir='column' flex='1' paddingX={["1rem", "3rem", "5rem"]}>
+        <Heading as='h1' size='2xl' mb={4} textAlign='center'>
+          Next.js with Chakra UI
+        </Heading>
+        <Heading as='h2' size='lg' mb={4} textAlign='center'>
+          Starter Template
+        </Heading>
 
-        <p className='description'>
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <Text fontSize='2xl' textAlign='center'>
+          Get started by editing{" "}
+          <Code fontSize='xl' fontWeight='semibold' colorScheme='orange'>
+            pages/index.js
+          </Code>
+        </Text>
 
-        <div className='grid'>
-          <a href='https://nextjs.org/docs' className='card'>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href='https://nextjs.org/learn' className='card'>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a href='https://github.com/vercel/next.js/tree/master/examples' className='card'>
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href='https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-            className='card'
+        <Center flexDirection={["column", null, "row"]} flexWrap='wrap' maxW='800px' mt='3rem'>
+          <Card title='Documentation &rarr;' link='https://nextjs.org/docs'>
+            Find in-depth information about Next.js features and API.
+          </Card>
+          <Card title='Learn &rarr;' link='https://nextjs.org/learn'>
+            Learn about Next.js in an interactive course with quizzes!
+          </Card>
+          <Card title='Examples &rarr;' link='https://github.com/vercel/next.js/tree/master/examples'>
+            Discover and deploy boilerplate example Next.js projects.
+          </Card>
+          <Card
+            title='Deploy &rarr;'
+            link='https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
           >
-            <h3>Deploy &rarr;</h3>
-            <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
-        </div>
+            Instantly deploy your Next.js site to a public URL with Vercel.
+          </Card>
+        </Center>
       </Center>
-
-      <style jsx>{`
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-          margin-bottom: 16px;
-        }
-
-        .title.h2 {
-          font-size: 2.5rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,
-            Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
     </Center>
   );
 }
