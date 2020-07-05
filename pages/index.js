@@ -1,32 +1,5 @@
 import Head from "next/head";
-
 import { Center, Heading, Text, Code, Link } from "@chakra-ui/core";
-
-const Card = ({ title, link, children, ...props }) => {
-  return (
-    <Link
-      href={link}
-      flex='1 1 45%'
-      m={4}
-      p='1.5rem'
-      textDecoration='none'
-      borderWidth='1px'
-      borderRadius='10px'
-      transition='color 0.15s ease, border-color 0.15s ease'
-      _hover={{
-        textDecor: "none",
-        color: "teal.500",
-        borderColor: "teal.500",
-      }}
-      {...props}
-    >
-      <Heading as='h3' size='lg' fontWeight='normal' m=' 0 0 1rem 0'>
-        {`${title}`}
-      </Heading>
-      <Text fontSize='xl'>{children}</Text>
-    </Link>
-  );
-};
 
 export default function Home() {
   return (
@@ -73,7 +46,7 @@ export default function Home() {
           </Code>
         </Text>
 
-        <Center flexDirection={["column", null, "row"]} flexWrap='wrap' maxW='800px' mt='3rem'>
+        <Center flexDirection={["column", null, "row"]} flexWrap='wrap' maxW='800px' mt={12}>
           <Card title='Documentation &rarr;' link='https://nextjs.org/docs'>
             Find in-depth information about Next.js features and API.
           </Card>
@@ -92,5 +65,33 @@ export default function Home() {
         </Center>
       </Center>
     </Center>
+  );
+}
+
+function Card(props) {
+  const { title, link, children, ...rest } = props;
+
+  return (
+    <Link
+      href={link}
+      flex='1 1 45%'
+      m={4}
+      p={6}
+      textDecoration='none'
+      borderWidth='1px'
+      borderRadius='10px'
+      transition='color 0.15s ease, border-color 0.15s ease'
+      _hover={{
+        textDecor: "none",
+        color: "teal.500",
+        borderColor: "teal.500",
+      }}
+      {...rest}
+    >
+      <Heading as='h3' size='lg' fontWeight='normal' mb={4}>
+        {`${title}`}
+      </Heading>
+      <Text fontSize='xl'>{children}</Text>
+    </Link>
   );
 }
