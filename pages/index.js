@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Center, Heading, Text, Code, Link } from "@chakra-ui/core";
+import { Center, Heading, Text, Code, Link } from "@chakra-ui/layout";
 
 export default function Home() {
   return (

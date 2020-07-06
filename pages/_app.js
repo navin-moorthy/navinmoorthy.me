@@ -1,5 +1,6 @@
 import React from "react";
-import { ChakraProvider, CSSReset } from "@chakra-ui/core";
+import { ChakraProvider } from "@chakra-ui/system";
+import { CSSReset } from "@chakra-ui/css-reset";
 
 import theme from "../chakra";
 
