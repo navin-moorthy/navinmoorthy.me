@@ -1,3 +1,4 @@
+Sitemap: https://navinmoorthy.me/sitemap.xml
 User-agent: *
 Allow: /*
 
