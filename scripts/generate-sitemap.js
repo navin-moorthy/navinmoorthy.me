@@ -19,8 +19,8 @@ const prettier = require("prettier")
                   .replace("pages", "")
                   .replace(".js", "")
                   .replace(".mdx", "")
-                console.log("%c path", "color: #ff0000", path)
                 const route = path === "/index" ? "" : path
+
                 return `
                         <url>
                             <loc>${`https://navinmoorthy.me${route}`}</loc>
