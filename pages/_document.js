@@ -57,7 +57,10 @@ export default class Document extends NextDocument {
             property="og:description"
             content="Portfolio blog of Navin Moorthy"
           />
-          <meta property="og:image" content="/og-image.jpg" />
+          <meta
+            property="og:image"
+            content="http://navinmoorthy.me/og-image.jpg"
+          />
 
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="http://navinmoorthy.me/" />
@@ -66,7 +69,10 @@ export default class Document extends NextDocument {
             property="twitter:description"
             content="Portfolio blog of Navin Moorthy"
           />
-          <meta property="twitter:image" content="/og-image.jpg"></meta>
+          <meta
+            property="twitter:image"
+            content="http://navinmoorthy.me/og-image.jpg"
+          ></meta>
         </Head>
         <body>
           <InitializeColorMode />
