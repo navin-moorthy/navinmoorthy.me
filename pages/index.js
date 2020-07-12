@@ -1,5 +1,6 @@
 import Head from "next/head"
 import { Center, Heading, Text, Code, Link } from "@chakra-ui/layout"
+import { Logo } from "../components/logo"
 
 export default function Home() {
   return (
@@ -11,6 +12,29 @@ export default function Home() {
           name="description"
           content="Get started with Next JS & Chakra UI using this starter template"
         />
+
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="msapplication-config" content="/browserconfig.xml" />
+        <meta name="msapplication-TileColor" content="#EA2E6E" />
+        <meta name="theme-color" content="#EA2E6E" />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://navinmoorthy.me/" />
@@ -49,6 +73,7 @@ export default function Home() {
         flex="1"
         paddingX={["1rem", "3rem", "5rem"]}
       >
+        <Logo boxSize={24} />
         <Heading as="h1" size="2xl" mb={4} textAlign="center">
           Next.js with Chakra UI
         </Heading>
