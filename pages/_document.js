@@ -59,7 +59,7 @@ export default class Document extends NextDocument {
           />
           <meta
             property="og:image"
-            content="https://res.cloudinary.com/navinnavi19/image/upload/v1594553299/navin-moorthy/og-image.png"
+            content="https://res.cloudinary.com/navin-moorthy/image/upload/v1594553796/navin-moorthy/og-image.png"
           />
 
           <meta property="twitter:card" content="summary_large_image" />
@@ -71,7 +71,7 @@ export default class Document extends NextDocument {
           />
           <meta
             property="twitter:image"
-            content="https://res.cloudinary.com/navinnavi19/image/upload/v1594553299/navin-moorthy/og-image.png"
+            content="https://res.cloudinary.com/navin-moorthy/image/upload/v1594553796/navin-moorthy/og-image.png"
           ></meta>
         </Head>
         <body>
