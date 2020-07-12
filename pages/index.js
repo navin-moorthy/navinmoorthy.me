@@ -1,72 +1,9 @@
-import Head from "next/head"
 import { Center, Heading, Text, Code, Link } from "@chakra-ui/layout"
 import { Logo } from "../components/logo"
 
 export default function Home() {
   return (
     <Center flexDir="column" minH="100vh" py={8}>
-      <Head>
-        <title>Next JS & Chakra UI Starter Template</title>
-        <meta name="title" content="Next JS & Chakra UI Starter Template" />
-        <meta
-          name="description"
-          content="Get started with Next JS & Chakra UI using this starter template"
-        />
-
-        <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta name="msapplication-config" content="/browserconfig.xml" />
-        <meta name="msapplication-TileColor" content="#EA2E6E" />
-        <meta name="theme-color" content="#EA2E6E" />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://navinmoorthy.me/" />
-        <meta
-          property="og:title"
-          content="Next JS & Chakra UI Starter Template"
-        />
-        <meta
-          property="og:description"
-          content="Get started with Next JS & Chakra UI using this starter template"
-        />
-        <meta
-          property="og:image"
-          content="https://og-image.now.sh/Starter%20Template.jpeg?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg&images=https%3A%2F%2Fgist.githubusercontent.com%2Fnavin-moorthy%2Fd4c5fe7f384a106ba8171eee77b45623%2Fraw%2F3e4d37340270a38367bfe94dd2f7daea2a0537a2%2Fchakra-ui-logo.svg&heights=200&heights=150"
-        />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://navinmoorthy.me/" />
-        <meta
-          property="twitter:title"
-          content="Next JS & Chakra UI Starter Template"
-        />
-        <meta
-          property="twitter:description"
-          content="Get started with Next JS & Chakra UI using this starter template"
-        />
-        <meta
-          property="twitter:image"
-          content="https://og-image.now.sh/Starter%20Template.jpeg?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg&images=https%3A%2F%2Fgist.githubusercontent.com%2Fnavin-moorthy%2Fd4c5fe7f384a106ba8171eee77b45623%2Fraw%2F3e4d37340270a38367bfe94dd2f7daea2a0537a2%2Fchakra-ui-logo.svg&heights=200&heights=150"
-        />
-      </Head>
-
       <Center
         as="main"
         flexDir="column"

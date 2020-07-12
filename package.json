@@ -44,6 +44,7 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.5",
     "next": "9.4.4",
+    "next-google-fonts": "^1.2.1",
     "prettier": "^2.0.5",
     "react": "16.13.1",
     "react-dom": "16.13.1"
