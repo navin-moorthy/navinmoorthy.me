@@ -1,10 +1,10 @@
+node_modules
+.next
 .cache
 build
-node_modules
 public
 dist
 coverage
-.next
 package.json
 package-lock.json
 yarn.lock
