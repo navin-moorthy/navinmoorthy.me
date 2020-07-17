@@ -23,6 +23,7 @@
     "format": "prettier --write \"./**/*.{js,ts,css,less,json,md,html,yml,yaml,pcss,jsx,tsx}\"",
     "lint": "eslint . --ext .js --fix",
     "lint:package": "sort-package-json",
+    "release": "standard-version",
     "start": "next start"
   },
   "dependencies": {
@@ -59,6 +60,7 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
-    "sort-package-json": "^1.44.0"
+    "sort-package-json": "^1.44.0",
+    "standard-version": "^8.0.2"
   }
 }
