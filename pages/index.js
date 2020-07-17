@@ -6,9 +6,7 @@ export default function Home() {
       <Flex
         as="main"
         flexDir="column"
-        flex="1"
         maxW="48rem"
-        maxH="max-content"
         marginX={["1rem", "3rem", "5rem"]}
       >
         <Heading as="h1" fontSize={["5xl", "6xl"]} mb={4}>
