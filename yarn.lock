@@ -1015,6 +1015,14 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@chakra-ui/button@^1.0.0-next.6":
+  version "1.0.0-next.6"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/button/-/button-1.0.0-next.6.tgz#7f0876fd5545ab0eeac9a2ebd1cc021c0cd7d799"
+  integrity sha512-1R+NV2IBcQ8rykInIxfR1PJVYQ7hqiNfdT+l452JtKxYaJI+sApdmWdF/i+Po5oXcJPDzWyPeibYfASFCMEUIA==
+  dependencies:
+    "@chakra-ui/spinner" "^1.0.0-next.6"
+    "@chakra-ui/utils" "^1.0.0-next.6"
+
 "@chakra-ui/color-mode@^1.0.0-next.6":
   version "1.0.0-next.6"
   resolved "https://registry.yarnpkg.com/@chakra-ui/color-mode/-/color-mode-1.0.0-next.6.tgz#55ad43a17c35f51d8d9b523de1a14c7ac27db4a4"
@@ -1052,6 +1060,14 @@
   dependencies:
     "@chakra-ui/icon" "^1.0.0-next.6"
     "@chakra-ui/utils" "^1.0.0-next.6"
+
+"@chakra-ui/spinner@^1.0.0-next.6":
+  version "1.0.0-next.6"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/spinner/-/spinner-1.0.0-next.6.tgz#35c159e957b7e94432032205d020f692b93f6ab9"
+  integrity sha512-QYPxVMdXGuPdfRB/i5RvOc8nq0eoY5WWmVQbz4K/zwBFFH4Cl3EyWBAGGw3b23cqAVO0jIsbSPIs8BNY+hvDxQ==
+  dependencies:
+    "@chakra-ui/utils" "^1.0.0-next.6"
+    "@chakra-ui/visually-hidden" "^1.0.0-next.6"
 
 "@chakra-ui/styled-system@^1.0.0-next.6":
   version "1.0.0-next.6"
@@ -1109,6 +1125,13 @@
     css-box-model "1.2.1"
     lodash.merge "4.6.2"
     memoize-one "5.1.1"
+
+"@chakra-ui/visually-hidden@^1.0.0-next.6":
+  version "1.0.0-next.6"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/visually-hidden/-/visually-hidden-1.0.0-next.6.tgz#7f7e53742343a9eccdd0bf5eb083bfe56de1bb14"
+  integrity sha512-7owuNKUaQ4XbdUEZWPQl43q7PxHaY8ou77CZim2aQpr+Qxcauoe00+OWd4utE5uHGNr6r01vzHI4Jaudx9pgCg==
+  dependencies:
+    "@chakra-ui/utils" "^1.0.0-next.6"
 
 "@commitlint/cli@^9.1.1":
   version "9.1.1"

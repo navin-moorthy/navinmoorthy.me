@@ -1,4 +1,5 @@
 import { Center, Heading, Text, Flex } from "@chakra-ui/layout"
+import { Button } from "@chakra-ui/button"
 
 export default function Home() {
   return (
@@ -17,10 +18,12 @@ export default function Home() {
         </Heading>
 
         <Text fontSize={["2xl", "3xl"]}>
-          Teaching myself UI design and development while working as UI
+          Teaching myself UI design and development while working as Web
           Developer.
         </Text>
       </Flex>
+
+      <Button>Say Hi 🎉</Button>
     </Center>
   )
 }
